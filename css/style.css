@@ -25,6 +25,7 @@ body {
     justify-content: center;
     gap: 10px;
     background: rgba(255, 255, 255, 0.1); /* напівпрозорий фон */
+    border: 1px solid rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);          /* розмиття */
     -webkit-backdrop-filter: blur(10px);  /* для Safari */
     border-radius: 20px;
@@ -73,6 +74,7 @@ input {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 5px;
     font-family: 'Inter', sans-serif;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -83,4 +85,9 @@ input {
 p, a {
     font-size: 18px;
     text-decoration: none;
+}
+
+a {
+    cursor: pointer;
+    color: rgb(13, 13, 235);
 }
