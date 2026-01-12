@@ -7,34 +7,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Register</title>
+    <link rel="stylesheet" href="layout.html">
+    <title>Sign In</title>
 </head>
 <body>
     <div class="wrapper">
-        <h1>Create Account</h1>
+        <h1>Sign In</h1>
         <form action="#" method="get" target="_blank">
-            <label for="text">username</label>
-            <input type="text" id="username" placeholder="Username" required minlength="5">
-
+            <input type="email" id="email" class="email" placeholder="Email" required minlength="8">
             <label for="email">email</label>
-            <input type="email" id="email" placeholder="Email" required>
 
+            <input type="password" id="password" class="password" placeholder="Password" required minlength="8">
             <label for="password">password</label>
-            <input type="password" id="password" placeholder="Password" required minlength="8">
 
+            <input type="password" id="password-conf" class="password-conf" placeholder="Confirm Password" required minlength="8">
             <label for="password-conf">Confirm password</label>
-            <input type="password" id="password-conf" placeholder="Confirm Password" required minlength="8">
-            
-            <button class="btn" id="btn" type="submit">Register</button>
+
+            <button class="btn" id="btn" type="submit">Sign In</button>
         </form>
         
-            
-        <p>Already have an account? <a href="layout.html">Sign in</a></p>
     </div>
 </body>
 </html>
-
-
-
-
-

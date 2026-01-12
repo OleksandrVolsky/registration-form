@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
@@ -8,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url("/img/background.jpg");
+    background-image: url("../img/background.jpg");
     background-size: cover;
     font-family: 'Inter', sans-serif;
     
@@ -16,7 +17,8 @@ body {
 
 .wrapper {
     width: 360px;
-    height: 370px;
+    min-height: 370px;
+    padding: 30px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,10 +28,15 @@ body {
     backdrop-filter: blur(10px);          /* розмиття */
     -webkit-backdrop-filter: blur(10px);  /* для Safari */
     border-radius: 20px;
+    
 }
 
 label {
-    display: none;
+    /* display: none; - погано для доступності (accessibility). */ 
+
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
 }
 
 form {
@@ -46,11 +53,16 @@ h1 {
 }
 
 input {
-    width: 200px;
-    height: 30px;
+    width: 100%;
+    min-width: 260px;
+    height: 40px;
+    padding: 0 10px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 5px
+    border-radius: 5px;
+    padding-left: 5px;
+    font-family: 'Inter', sans-serif;
+    
 }
 
 .btn {
@@ -60,17 +72,15 @@ input {
     color: #000000;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 5px;
+    font-family: 'Inter', sans-serif;
 }
 
 .btn:hover {
-    background-color: rgb(9, 239, 162);
+    background-color: #09efa2;
+    color: #ffffff;
 }
 
-p {
+p, a {
     font-size: 18px;
-}
-
-a {
     text-decoration: none;
-    font-size: 18px;
 }
