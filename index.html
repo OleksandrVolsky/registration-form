@@ -1,53 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>registration-form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Registory</title>
 </head>
-
 <body>
-    <!-- wrapper -->
     <div class="wrapper">
+        <h1>Create Account</h1>
+        <form action="#" method="get" target="_blank"> 
+            <input type="text" id="text" class="username" placeholder="Username" required minlength="5">
+            <label for="text">username</label>
 
-        <!-- container -->
-        <div class="container">
+            <input type="email" id="email" class="email" placeholder="Email" required minlength="8">
+            <label for="email">email</label>
 
-            <!-- log-text -->
-            <h1 class="log-text">Log In</h1>
+            <input type="password" id="password" class="password" placeholder="Password" required minlength="8">
+            <label for="password">password</label>
 
-            <!-- form -->
-            <form action="" class="form">
+            <input type="password" id="password-conf" class="password-conf" placeholder="Confirm Password" required minlength="8">
+            <label for="password-conf">Confirm password</label>
 
-                <!-- email -->
-                <div>
-                    <input type="email" class="input" placeholder="login/email"><br>
-                </div>
-
-                <div>
-                    <!-- password -->
-                    <input type="password" class="input" placeholder="password"><br>
-                </div>
-
-                <!-- checkbox -->
-                <label for=""><input type="checkbox" class="checkbox">
-                    <span class="remember">Remember me</span>
-                </label>
-
-                <!-- log-acc -->
-                <p class="log-acc">log in width social account</p>
-
-                <!-- btn -->
-                <button class="btn-log">Log In</button><br>
-
-                <!-- forget -->
-                <a href="" class="forget">forget your password?</a>
-
-            </form>
-        </div>
+            <button class="btn" id="btn" type="submit">Redister</button>
+        </form>
+        
+            
+        <p>Already have an account? <a href="#">Sign in</a></p>
     </div>
 </body>
-
 </html>
+
+
+
+
+
